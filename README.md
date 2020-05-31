@@ -55,17 +55,24 @@ Occasionally, the command line will ask if you wish to continue given the amount
 ### Required Packages
 - picamera
 - cv2
-- time
 - sounddevice
 - numpy
-- subprocess
+- libportaudio
 
-### Download Instructions
-#### Do each of these one at a time
+### Download Instructions (Type these commands into Terminal)
+##### **NOTE TO SELF: VERIFY THAT THESE WORK**
 ##### Make sure your system is up to date
 ```sudo apt-get update```
-##### random
+##### picamera
 ```sudo apt-get install python-picamera python3-picamera```
+##### libportaudio
+```sudo apt-get install -y libportaudio-dev```
+##### sounddevice
+  ```python3 -m pip install sounddevice```
+##### numpy
+  ```pip install numpy```
+##### OpenCV
+  This is by far the most time consuming step. Consult [this guide](https://pimylifeup.com/raspberry-pi-opencv/) for a very thorough walkthrough of how to do it correctly. 
 
 
 
