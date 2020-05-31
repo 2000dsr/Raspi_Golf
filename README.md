@@ -3,33 +3,18 @@
 This project uses readily available materials to create a video replay system for the Raspberry Pi for use by golfers
 
 ### Materials Needed
+- [Raspberry Pi 4 (4gb)](https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X/ref=sr_1_4?dchild=1&keywords=raspberry+pi&qid=1590900503&sr=8-4)
+  - Untested on other versions/configurations of the Pi, but should work on any reasonably recent iteration
+- [Raspberry Pi Camera Module](https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_1?dchild=1&keywords=raspberry+pi+camera&qid=1590900526&sr=8-1)
+  - New High-Quality Camera works as well (perhaps better), but probably warrants the new 8gb Pi for processing
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+#### Optional Materials
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/2000dsr/Raspi_Golf/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with your project? Reach out to me by emailing 2000dsr@gmail.com and I will see if I can help.
