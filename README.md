@@ -23,7 +23,7 @@
 - [Two Step Pedal System](https://www.amazon.com/gp/product/B07QDRPDS2/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
   - Used in Appendix B, this is not required but a nice touch and saves disk space down the line
 - USB or Bluetooth Keyboard
-  - Not necessary if you intend to only use SSH for the initialization, but convinient for ironing out bugs and making quick changes without the constraints of VNC
+  - Not necessary if you intend to only use SSH for the initialization, but convinient for ironing out bugs and making quick changes without the constraints of VNC or SSH (See Appendix A)
 
 ## **Step 0: Set up the Raspberry Pi**
 You can skip this step if you have already set up your Pi.
@@ -48,14 +48,25 @@ Each time you want to use SSH to interface, you will need to follow these instru
 Given that these instructions are followed, any command line instruction can be typed into the Terminal on your computer or to the Pi Terminal.
 
 ## **Step 1: Download Everything You Will Need**
-There are a number of python packages that you will need in order to run the program. Each one has a slightly different set of steps to install it so pay attention to the syntax
+There are a number of python packages that you will need in order to run the program. Each one has a slightly different set of steps to install it so pay attention to the syntax. For convinience, they are first listed altogether and then the command to download is below.
 
+Occasionally, the command line will ask if you wish to continue given the amount of memory it requires. It needs an input of Y to continue, so simply type Y and then press enter when this occurs. Depending on the version of Raspbian you install, you might already have some of these, but run each command to be sure. 
 
+### Required Packages
+- picamera
+- cv2
+- time
+- sounddevice
+- numpy
+- subprocess
 
+### Download Instructions
+#### Do each of these one at a time
+##### Make sure your system is up to date
+```sudo apt-get update```
+##### random
+```sudo apt-get install python-picamera python3-picamera```
 
-
-
-  
 
 
 
