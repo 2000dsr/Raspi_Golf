@@ -1,10 +1,8 @@
-## Welcome to GitHub Pages
+## Raspberry Pi Golf Replay System
 
-You can use the [editor on GitHub](https://github.com/2000dsr/Raspi_Golf/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This project uses readily available materials to create a video replay system for the Raspberry Pi for use by golfers
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### Materials Needed
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
