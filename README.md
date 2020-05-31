@@ -21,7 +21,7 @@
 - Raspberry Pi Starter  Kit
   - There are a variety of these on the internet, and they often come bundled with a case and the required hdmi and power cables
 - [Two Step Pedal System](https://www.amazon.com/gp/product/B07QDRPDS2/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
-  - Used in Appendix B, this is not required but a nice touch and saves disk space down the line
+  - Used in Appendix C, this is not required but a nice touch and saves disk space down the line
 - USB or Bluetooth Keyboard
   - Not necessary if you intend to only use SSH for the initialization, but convinient for ironing out bugs and making quick changes without the constraints of VNC or SSH (See Appendix A)
 
@@ -74,8 +74,20 @@ Occasionally, the command line will ask if you wish to continue given the amount
 ##### OpenCV
   This is by far the most time consuming step. Consult [this guide](https://pimylifeup.com/raspberry-pi-opencv/) for a very thorough walkthrough of how to do it correctly. 
 
+## **Step 2: Install The Camera Module**
+Consult [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2) to install the camera module. Ensure that it is in the correct orientation (blue tape towards the ethernet port) and that you enable the camera module either in the local settings or by typing ```sudo raspi-config``` into terminal. 
+
+**USE CAUTION WHEN HANDLING THE CAMERA. IT IS VERY SENSITIVE TO STATIC ELECTRICITY SO BE SURE TO GROUND YOURSELF**
+
+## Appendix B: Making a case for the camera
+Due to the camera's sensitivity to static electricity, it might be smart to create a case for the camera. You could buy one online, or it is very easy to make your own using a SD Card Case. Simply cut a square into the plastic for the lens to go through and clear out one side of it for the ribbon cable. 
+
+PICTURE HERE
 
 
+
+### Thanks To
+The following resources were used to make this project:
 
 
 ### Support or Contact
