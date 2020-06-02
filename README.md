@@ -92,7 +92,12 @@ To verify that the microphone is working, plug it into one of the USB Ports and 
 ## **Step 4: Set up the required folders and subprograms**
 
 ## **Step 5: Select which version you want**
-I have included three different versions of the main python program. You can decide which you want based on the materials you have and what functionality you want.
+I have included three different versions of the main python program. You can decide which you want based on the materials you have and what functionality you want. All of these require the Raspberry Pi (and the power cord, HDMI, SD Card, etc.), the Pi Camera, and a USB Microphone
+
+1. Lightweight Swing  Replay 
+  - Extra Materials: None
+  - Functionality: Listens for golf swing, shows the swing afterwards
+  - File: FILE HERE
 
 
 
