@@ -8,20 +8,9 @@ import time
 import sounddevice as sd
 import numpy as np
 from subprocess import call
-listening = True
-video_num = 0
-no_slow = False
-dropbox_bool = False
-
-def upload_to_db(filename, upload):
-    dbx = dropbox.Dropbox('qpOipSp-m5wAAAAAAAABfigNoquCpwZijEZgoOCqhD_oBer0PCzeWB0cqJSdCMQ0')
-    with open(filename, 'rb') as f:
-        # We use WriteMode=overwrite to make sure that the settings in the file
-        # are changed on upload
-        try:
-            dbx.files_upload(f.read(), "/"+upload, mode=WriteMode('overwrite'))
-        except ApiError as err:
-            pass
+listening = True # Boolean that is enabled/disabled when the mic input crosses a certain threshold
+no_slow = False # Boolean that ends the current video and tells it to not show the replay
+dropbox_bool = False 
 
 def audio_monitor():
     global listening
@@ -82,12 +71,12 @@ def show_video(fn, fps):
 
 camera = picamera.PiCamera()
 stream = picamera.PiCameraCircularIO(camera, seconds=1)
-camera.start_recording(stream, format='h264')  # used to be h264 if this throws an error...
+camera.start_recording(stream, format='h264') 
 
 while True:# Main Loop
     if listening:
         audio_monitor()  # listens for the audio to be too loud
-    if not listening:# triggered when audio is too loud, this is the video replay command
+    if not listening:# When audio level breaks threshold, this is the video replay command
         no_slow = False
         dropbox_bool = False
         #try:
