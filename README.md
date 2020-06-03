@@ -89,17 +89,32 @@ To check that the camera is working, type ```raspistill -o Desktop/test.jpg``` i
 
 To verify that the microphone is working, plug it into one of the USB Ports and then right click the audio icon in the menu bar. Click input devices and turn its volume all the way up. This step will vary slightly depending on which mic you used, but it was the procedure for the two types of mics I tested (USB Lapel Mic and the USB Mic linked in the materials section).
 
-## **Step 4: Set up the required folders and subprograms**
+## **Step 4: Download the main program**
+The main program (link file here) is what will run while you are hitting. There are a variety of lines that are commented out, so if you run it as it comes, it has only the basic functionality (listens for shot, replays it full speed, replays it half speed) and doesn't include pedal support or cloud functionality. Step 7 will discuss how to enable these portions of it and other steps you will need to take. 
 
-## **Step 5: Select which version you want**
-I have included three different versions of the main python program. You can decide which you want based on the materials you have and what functionality you want. All of these require the Raspberry Pi (and the power cord, HDMI, SD Card, etc.), the Pi Camera, and a USB Microphone
+Download the file to your desktop and save it to any name you want (obviously ensuring it ends with .py).
 
-1. Lightweight Swing  Replay 
-  - Extra Materials: None
-  - Functionality: Listens for golf swing, shows the swing afterwards
-  - File: FILE HERE
+## **Step 5: Set up the required folders and subprograms**
+You can name the folders anything you want, but if you choose a different name be sure to update it in the code wherever referenced. For simplicity, the names in the instructions align with the ones in the python program. 
 
+- **Create a folder named Swing Replays**
+On the desktop, right click and make a folder called "Swing Replays" for the video files
 
+- **Create a file named golf_video_replay**
+On the desktop, right click and make a file named "golf_video_replay". This will be the icon for the desktop for you to actually run the program. 
+
+- **OPTIONAL: Download the audio calibration program**
+This isn't required (I did it manually with trial and error), but each setup will have a slightly different audio level threshold for the microphone based on mic brand and proximity to the swing. To figure out your specific threshold I made a simple program to identify your level. 
+
+## **Step 6: Find your Audio Threshold and write it into your program**
+ONCE AUDIO PROGRAM IS MADE PUT INSTRUCTIONS HERE
+
+## **Step 7: Add additional functionality**
+In order to have any additional functionality, you will need to have the [Two Step Pedal System](https://www.amazon.com/gp/product/B07QDRPDS2/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1). All it is, though, is a big keyboard where the left pedal presses 'a' and the right presses 'b'. With this in mind, you can enable this functionality by using a usb keyboard or some other implementation.
+
+### Extra Features:
+1. Upload to cloud
+CONTINUE HERE
 
 
 ### Thanks To
