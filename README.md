@@ -1,6 +1,6 @@
 # Pi Golf Replay
 
-## THIS PROJECT IN CURRENTLY IN PROGRESS. CHECK BACK LATER FOR UPDATES! (May 31, 2020)
+## THIS PROJECT IN CURRENTLY IN PROGRESS. CHECK BACK LATER FOR UPDATES! (June 4, 2020)
 
 ## **What To Buy**
 ### Required Materials
@@ -90,9 +90,9 @@ To check that the camera is working, type ```raspistill -o Desktop/test.jpg``` i
 To verify that the microphone is working, plug it into one of the USB Ports and then right click the audio icon in the menu bar. Click input devices and turn its volume all the way up. This step will vary slightly depending on which mic you used, but it was the procedure for the two types of mics I tested (USB Lapel Mic and the USB Mic linked in the materials section).
 
 ## **Step 4: Download the main program**
-The main program (link file here) is what will run while you are hitting. There are a variety of lines that are commented out, so if you run it as it comes, it has only the basic functionality (listens for shot, replays it full speed, replays it half speed) and doesn't include pedal support or cloud functionality. Step 7 will discuss how to enable these portions of it and other steps you will need to take. 
+The main program ([linked here](swing_replay.py)) is what will run while you are hitting. There are a variety of lines that are commented out, so if you run it as it comes, it has only the basic functionality (listens for shot, replays it full speed, replays it half speed) and doesn't include pedal support or cloud functionality. Step 7 will discuss how to enable these portions of it and other steps you will need to take. 
 
-Download the file to your desktop and save it to any name you want (obviously ensuring it ends with .py).
+Download [the file](swing_replay.py) to your desktop and save it to any name you want (obviously ensuring it ends with .py).
 
 ## **Step 5: Set up the required folders and subprograms**
 You can name the folders anything you want, but if you choose a different name be sure to update it in the code wherever referenced. For simplicity, the names in the instructions align with the ones in the python program. 
@@ -113,8 +113,18 @@ ONCE AUDIO PROGRAM IS MADE PUT INSTRUCTIONS HERE
 In order to have any additional functionality, you will need to have the [Two Step Pedal System](https://www.amazon.com/gp/product/B07QDRPDS2/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1). All it is, though, is a big keyboard where the left pedal presses 'a' and the right presses 'b'. With this in mind, you can enable this functionality by using a usb keyboard or some other implementation.
 
 ### Extra Features:
-1. Upload to cloud
-CONTINUE HERE
+There are three primary extra features included with the program. Because the pedal system has two pedals, you need to pick two. I assume most people will elect to include "replay again" and "cloud upload" but if your system is offline or there is some other reason you do not want to have one of these two it also has the capability to have a button to simply skip the swing. 
+
+##### 1. Upload to cloud
+This will upload the last swing to the cloud. 
+
+##### 2. Replay last swing again
+This will show the most recent swing in full speed and then slow motion
+
+##### 3. Skip the replay and begin listening
+This will close out the replay and begin listening again (useful if the mic is accidentally set off or you want to quickly hit again without viewing)
+
+CONTINUE HERE WITH INSTRUCTIONS FOR ENABLING THE DESIRED FEATURES
 
 
 ### Thanks To
