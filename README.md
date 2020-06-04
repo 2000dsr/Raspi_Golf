@@ -1,6 +1,8 @@
 # Pi Golf Replay
 
 ## THIS PROJECT IN CURRENTLY IN PROGRESS. CHECK BACK LATER FOR UPDATES! (June 4, 2020)
+## Introduction
+This project aims to create a program and hardware setup that listens for a golf swing, then replays the swing in its entirety in full speed and slow motion with no user input. The videos are saved locally and to the cloud if the user desires. All coding is in python.
 
 ## **What To Buy**
 ### Required Materials
