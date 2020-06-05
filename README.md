@@ -62,9 +62,17 @@ Occasionally, the command line will ask if you wish to continue given the amount
 - libportaudio
 
 ### Download Instructions (Type these commands into Terminal)
-##### **NOTE: I reccomend installing these in a [virtual environment](https://docs.python.org/3/library/venv.html)**
+##### **System Packages needed for OpenCV (Thanks to [pyimagesearch](https://www.pyimagesearch.com/2018/09/19/pip-install-opencv/) for these)**
+```
+sudo apt-get install libhdf5-dev libhdf5-serial-dev libhdf5-100
+sudo apt-get install libqtgui4 libqtwebkit4 libqt4-test python3-pyqt5
+sudo apt-get install libatlas-base-dev
+sudo apt-get install libjasper-dev
+```
 ##### Make sure your system is up to date
 ```sudo apt-get update```
+
+##### **NOTE: I reccomend installing these in a [virtual environment](https://docs.python.org/3/library/venv.html)**
 ##### picamera
 ```sudo apt-get install python-picamera python3-picamera```
 ##### libportaudio
