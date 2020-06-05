@@ -62,7 +62,7 @@ Occasionally, the command line will ask if you wish to continue given the amount
 - libportaudio
 
 ### Download Instructions (Type these commands into Terminal)
-##### **NOTE TO SELF: VERIFY THAT THESE WORK**
+##### **NOTE: I reccomend installing these in a [virtual environment](https://docs.python.org/3/library/venv.html)**
 ##### Make sure your system is up to date
 ```sudo apt-get update```
 ##### picamera
@@ -74,7 +74,7 @@ Occasionally, the command line will ask if you wish to continue given the amount
 ##### numpy
   ```pip install numpy```
 ##### OpenCV
-  This is by far the most time consuming step. Consult [this guide](https://pimylifeup.com/raspberry-pi-opencv/) for a very thorough walkthrough of how to do it correctly. 
+  ```pip install opencv-contrib-python```
 
 ## **Step 2: Install The Camera Module**
 Consult [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2) to install the camera module. Ensure that it is in the correct orientation (blue tape towards the ethernet port) and that you enable the camera module either in the local settings or by typing ```sudo raspi-config``` into terminal. 
